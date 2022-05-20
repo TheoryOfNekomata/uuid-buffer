@@ -4,6 +4,25 @@
   "types": "dist/types/index.d.ts",
   "main": "dist/cjs/production/index.js",
   "module": "dist/esm/production/index.js",
+  "publishing": {
+    "github": {
+      "repository": "https://github.com/TheoryOfNekomata/uuid-buffer.git",
+      "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+      }
+    },
+    "master": {
+      "repository": "https://code.modal.sh/TheoryOfNekomata/uuid-buffer.git",
+      "publishConfig": {
+        "registry": "https://js.pack.modal.sh"
+      }
+    },
+    "npm": {
+      "publishConfig": {
+        "registry": "https://registry.npmjs.com"
+      }
+    }
+  },
   "exports": {
     ".": {
       "development": {
